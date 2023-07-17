@@ -1,6 +1,7 @@
 from google.cloud import storage
+import json
 
-def write_read(bucket_name, blob_name):
+def write_read(bucket_name, blob_name, request):
     """Write and read a blob from GCS using file-like IO"""
     # The ID of your GCS bucket
     # bucket_name = "your-bucket-name"
@@ -15,7 +16,15 @@ def write_read(bucket_name, blob_name):
     # Mode can be specified as wb/rb for bytes mode.
     # See: https://docs.python.org/3/library/io.html
     with blob.open("w") as f:
-        f.write("Hello world")
+        # Write ticker as JSON
+        temp = {
+            'ticker' : request.symbol,
+            'price' : request.close,
+            'date' : request.from_
+        }
+        json.dumps(temp)
+
+        f.write(temp)
 
     with blob.open("r") as f:
         print(f.read())

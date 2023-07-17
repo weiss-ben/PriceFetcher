@@ -45,9 +45,9 @@ for t in tickers['tickers']:
     # Query API
     request = client.get_daily_open_close_agg(
         t,
-        "2023-07-14", #today,
+        today,
     )
 
     # Insert price into DB
-    GCS_module.write_read('bucket_name_here', 'blob_name_here')
+    GCS_module.write_read('bucket_name_here', 'blob_name_here', request)
     print('ticker: ', request.symbol, ' close: ', request.close)
