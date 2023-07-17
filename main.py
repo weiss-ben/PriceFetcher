@@ -1,33 +1,53 @@
-# Import REST client
+########################
+##### Dependencies #####
+########################
+
+# Stock data REST client
 from polygon import RESTClient
 
-# import JSON for reading config files
+# JSON for reading config files
 import json
 
+# Datetime for api querying
+import datetime
+
+# GCS writing
+import GCS_module
+
+############################
 ###### API Connetction #####
+############################
 
 # Get API key from config
-with open('api.config.JSON', 'r') as api_file:
+with open('./config/api.config.JSON', 'r') as api_file:
     api_key = json.load(api_file)
 
 # Establish API connection
 client = RESTClient(api_key['key'])
 
-##### DB Connection #####
+#############################
+##### DB/GCS Connection #####
+#############################
 
+#############################
 ##### Ticker/Price info #####
+#############################
 
 # Load list of tickers from config file
-with open('ticker_list.config.JSON', 'r') as ticker_file:
+with open('./config/ticker_list.config.JSON', 'r') as ticker_file:
     tickers = json.load(ticker_file)
+
+# Today's date for API queries
+today = str(datetime.date.today())
 
 # Query each ticker and load into DB
 for t in tickers['tickers']:
     # Query API
     request = client.get_daily_open_close_agg(
         t,
-        '2023-07-14',
+        "2023-07-14", #today,
     )
 
     # Insert price into DB
-    print(request)
+    GCS_module.write_read('bucket_name_here', 'blob_name_here')
+    print('ticker: ', request.symbol, ' close: ', request.close)
