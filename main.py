@@ -50,4 +50,4 @@ for t in tickers['tickers']:
 
     # Insert price into DB
     GCS_module.write_read('bucket_name_here', 'blob_name_here', request)
-    print('ticker: ', request.symbol, ' close: ', request.close)
+    print('ticker: ', request.symbol, ' close: ', request.close, request)
