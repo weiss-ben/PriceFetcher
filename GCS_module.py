@@ -26,7 +26,4 @@ def write_read(bucket_name, blob_name, request):
 
         f.write(temp)
 
-    with blob.open("r") as f:
-        print(f.read())
-
     f.close()
