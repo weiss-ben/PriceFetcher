@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "price-fetcher-395923",
+  "private_key_id": "f2da242419209b15279cc8c7573c419b52ba221c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCeqKqxnBKgeqMj\n1Osu7clm2vv9l2y1zDsu/y1io9U3huAdYROgeJoN5Q49jdeye3N7MP4A1MWi8OO8\nRDKtJFF5c3pvRYWWE4dO5watGRdY1pmfCQyHRnDDN0zvopkBmwIT4iUQuLJTvQfR\nkUIosAF2pFOXZaltC6x8Zs9btPc2Oajzw1LACMfvM3srA7JJZxj89nYK8zAmWXXa\nx7bIqVHW8EqCmIjynhriTHFRYIOakUuxqiJg0qy+7wCnbm5ssrUt5Ti5x/gvWyll\ntnlpGLeqkY41cVnfECUtm3X/0i+Re7F0w5En+CoSa1Zukx/D2EOBc+KRQsbUTyiP\n6Zyvs74vAgMBAAECggEAB4ceLjYnBhk7g1g3Xm8m1qv+N86G+Gs7xaOS3jLCy5Mp\nMAuqmDsQqCcdkVsZCF1mIcq1yolN5UjDrWuY8fEesoIBpaTpTTEZAuvgO7dMjckE\n2fBeeU6kzAZkLpyK4PIfW50nwA7bWzDFXbKkLnUHZL8wPiczLjrXEMH6BbJk5lwr\n33HxzC2JNv+6B/M4APFJP+7stw2NlX8VspldQ2Mz5tSEdXZcWb5nsVdKSThpl4hn\nGIdQ9XCrxmcq2KllUON7zMTYek3Khg+uGxwdOQq5XQxrZtZxAYlK0QWlw/u8ADWW\nFH9mqrQFpunUB/B24bWpeBnvixVCvoeokS9iyCJDEQKBgQDPm2feCQgVNWsi4LfM\nqM8VvESJIwSmt7vHgOn4wpwp8ukAnm0sQr9Nf1A+dYdBa3W+mPYXZCgmgX6QGZL4\ntOCnVcz4O2fw1DxY4fSK1/yV1INg4vrYd/Y9A6xKXAHG1XveChXkBb988b+eDFOQ\n8mYwPNZAXP8aKN7In9a7Z4zm/wKBgQDDpFyBltN3sYNu/5AcHYtcBpkXWRx2/Ik/\nZgEnoVNRInClJ2fD6wsZpMRUE9DLTm8alVsMCUBtNMIhSTd2rr1fx/zQ97R4fLwW\nzJma03iNtHu4ELyUbCPMZK2yHMutMe1xW1NjxUHTnxZsIC4ed3+P+UsL3v0Cg6Qm\nu4LO4TzY0QKBgQCU/YmQPlkPp3OI507g0LE1fxSMepYm86sOpUTEox2huVNgf1II\nNqrF+j1jZcM4vt8Udv/9j4KFB+AFmGTymhSz4o6kAzY4Doh0nUx7rD/4YzgZ+ytc\n2NLdvNoTz23y/VjU49YL+9gN2gzTZzM9zchqi+6S6Gqnoncn8hYQDmN/jwKBgD8K\nsXxYm5/QJagY1dkZdBSdU6uAXXnB+n/hYLHifDSCwoWVYwxwqs0CmPj2washhQ+t\n3P7N5GLMQ1nye9rUh9VbXg4AI7lHiFxYZY7MYeZXqB4x1nKFPivYrVfdi4wtsHN8\nmCxoHcQRWWpSHEpY+1PrYtFac3Dh9n08ovQDBFZhAoGAAst2+ZIRwqgGaqjfIw5C\nWrcg+oKkqd+XuM1nmNQv0leEoKs6qsypnFRXWnr17a/tAKE5/DqCu0+kr06wt39g\nSMJqf/5lF7OSFKC7nEjtPGm0Wa50Djhf2W16tF0Nz/P+GxjfpDBp0ktUISrHetsX\nna689XHNT/KoeOBm7jw8WlQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pricefetcher-bigquery-access@price-fetcher-395923.iam.gserviceaccount.com",
+  "client_id": "111656446063653527163",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pricefetcher-bigquery-access%40price-fetcher-395923.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
