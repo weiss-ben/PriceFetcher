@@ -3,8 +3,6 @@
 ## 1. Install polygon.io REST API
 '''pip install -U polygon-api-client'''
 
-## 2. Install GCS
-https://cloud.google.com/python/docs/reference/storage/latest
+## 2. Create a GC Project and set up the Google Cloud CLI
 
-## 3. Set-up BCS authentication
-https://cloud.google.com/docs/authentication/client-libraries#python
+## 3. Follow the steps to authenticate a local GC CLI instance for a local environment
