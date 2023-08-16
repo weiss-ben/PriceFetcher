@@ -1,6 +1,17 @@
-from google.cloud import storage
+from google.cloud import bigquery
+from google.oauth2 import service_account 
 import json
 
+# Set up authenticated project access
+credentials = service_account.Credentials.from_service_account_file('.\config\price-fetcher-395923-f2da24241920.json')
+project_id = 'price-fetcher-395923'  
+client = bigquery.Client(credentials=credentials, project=project_id)
+
+# Insert into Price Table
+def insert_price_table():
+    query = client.query("""INSERT a, b, c INTO table name here""")
+    client.query(query)
+    
 def write_read(bucket_name, blob_name, request):
     """Write and read a blob from GCS using file-like IO"""
     # The ID of your GCS bucket
