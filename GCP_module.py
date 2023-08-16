@@ -2,7 +2,7 @@ from google.cloud import bigquery
 from google.oauth2 import service_account
 
 # Set up authenticated project access
-credentials = service_account.Credentials.from_service_account_file('.\config\price-fetcher-395923-f2da24241920.json')
+credentials = service_account.Credentials.from_service_account_file('.\config\price-fetcher-395923-7ff04b88fd66.json')
 project_id = 'price-fetcher-395923'  
 bq_client = bigquery.Client(credentials=credentials, project=project_id)
 

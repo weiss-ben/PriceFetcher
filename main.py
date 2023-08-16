@@ -12,7 +12,7 @@ import json
 import datetime
 
 # GCP authentication and BigQuery insertion
-import GCS_module
+import GCP_module
 
 ############################
 ###### API Connetction #####
@@ -57,5 +57,7 @@ for t in tickers['tickers']:
     })
 
     # Insert price into DB
-    GCS_module.write_read('bucket_name_here', 'blob_name_here', request)
+    GCP_module.insert_price_table(prices)
+
+    # DEBUG: Reach this point with no errors
     print('ticker: ', request.symbol, ' close: ', request.close, request)
