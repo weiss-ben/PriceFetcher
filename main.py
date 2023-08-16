@@ -11,7 +11,7 @@ import json
 # Datetime for api querying
 import datetime
 
-# GCS writing
+# GCP authentication and BigQuery insertion
 import GCS_module
 
 ############################
@@ -41,12 +41,20 @@ with open('./config/ticker_list.config.JSON', 'r') as ticker_file:
 today = str(datetime.date.today())
 
 # Query each ticker and load into DB
+prices = []
 for t in tickers['tickers']:
     # Query API
     request = client.get_daily_open_close_agg(
         t,
         today,
     )
+
+    # Append to prices list
+    prices.append({
+        'ticker' : request.symbol,
+        'price' : request.close,
+        '_date' : today
+    })
 
     # Insert price into DB
     GCS_module.write_read('bucket_name_here', 'blob_name_here', request)
