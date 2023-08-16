@@ -46,7 +46,8 @@ for t in tickers['tickers']:
     # Query API
     request = client.get_daily_open_close_agg(
         t,
-        today,
+        #today,
+        '2023-08-15'
     )
 
     # Append to prices list
@@ -60,4 +61,4 @@ for t in tickers['tickers']:
     GCP_module.insert_price_table(prices)
 
     # DEBUG: Reach this point with no errors
-    print('ticker: ', request.symbol, ' close: ', request.close, request)
+    print('ticker: ', request.symbol, ' close: ', request.close)
