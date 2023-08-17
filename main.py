@@ -47,7 +47,6 @@ for t in tickers['tickers']:
     request = client.get_daily_open_close_agg(
         t,
         today
-        #'2023-08-15'
     )
 
     # Append to prices list
